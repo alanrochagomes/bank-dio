@@ -16,8 +16,21 @@ class Account {
   }
 }
 
-const newwAccount: Account = new Account('Alan', 1)
-console.log(newwAccount)
+class Admin extends Account {
+ balance: number
+
+  constructor(name: string, accountNumber: number) {
+    super(name, accountNumber)
+    this.balance = 20
+  }
+
+  getBalance= () => {
+    console.log(this.balance)
+  }
+}
+
+const adminAccount: Admin = new Admin('Alan', 1)
+console.log(adminAccount)
 
 const account: Account = new Account('user', 2)
-account.deposit()
+console.log(account)
