@@ -10,7 +10,7 @@ export class CompanyAccount extends DioAccount {
     console.log('voce pegou um emprestimo')
   }
 
-  deposit = (): void => {
-    console.log('A empresa depositou')
+  deposit = (): number=> {
+    return 2
   }
 }
